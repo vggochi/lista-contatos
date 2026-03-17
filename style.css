@@ -1,0 +1,72 @@
+/* Fundo preto */
+
+
+/* Camada do gif */
+/* Fonte mais estilizada */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif; /* fonte moderna */
+  background-color: #000;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Importando fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Cards estilizados */
+.contact {
+  background: rgba(20, 20, 20, 0.9);
+  border: 1px solid #3cff00;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 12px;
+  max-width: 500px;
+  box-shadow: 0 10px 20px rgba(60, 255, 0, 0.4),
+              inset 0 0 15px rgba(9, 255, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  line-height: 1.6; /* aumenta espaçamento entre linhas */
+  white-space: pre-line; /* garante quebra de linha */
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("verde2.gif") center center / cover no-repeat;
+  opacity: 0.6; /* aumente para deixar mais visível (0.6–0.8) */
+  z-index: -1;
+  filter: brightness(1.2) contrast(1.2) saturate(1.5);
+}
+
+/* Container central */
+.container {
+  text-align: center;
+  width: 100%;
+  margin-top: 80px; /* deixa o conteúdo mais acima */
+}
+
+/* Título centralizado */
+h1 {
+  font-size: 2.5em;
+  color: #3cff00f8;
+  text-shadow: 0 0 15px #09ff00;
+  margin-bottom: 30px;
+}
+
+
+
+/* Efeito hover 3D */
+.contact:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 30px rgba(0, 255, 34, 0.6),
+              inset 0 0 25px rgb(9, 255, 0);
+}
